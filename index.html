@@ -53,13 +53,23 @@
   <body>
     <style>
       /* drag btn css start */
+      #parent {
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+      }
       .draging_icon {
         background: #0f994b;
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
         width: 65px;
         height: 65px;
         border-radius: 50%;
-        position: relative;
+        position: absolute;
+        bottom: 40px;
       }
       .draging_icon::before {
         content: "+";
@@ -531,15 +541,16 @@
       </div>
     </div>
 
-    <div class="draging_icon"></div>
-
+    <div class="draging_icon_parent" id="parent">
+      <div class="draging_icon"></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
     <script src="jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
     <script>
       $(function () {
-        $(".draging_icon").draggable();
+        $(".draging_icon").draggable({ containment: "parent" });
       });
 
       $(".draging_icon").dblclick(function () {
