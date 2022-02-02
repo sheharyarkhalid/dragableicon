@@ -379,7 +379,6 @@
         }
       }
     </style>
-
     <div class="cart_navigation">
       <div class="cart_navigation_content">
         <div class="cart_navigation_header">
@@ -536,16 +535,18 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script src="jquery-ui-touch-punch-master/jquery.ui.touch-punch.min.js"></script>
     <script>
       $(function () {
         $(".draging_icon").draggable();
       });
 
-      $(".draging_icon").click(function () {
+      $(".draging_icon").dblclick(function () {
         $(".cart_navigation").addClass("active");
         $(".draging_icon").addClass("active");
       });
-      $(".close_cart_navigation_btn").click(function () {
+      $(".close_cart_navigation_btn").dblclick(function () {
         $(".cart_navigation").removeClass("active");
         $(".draging_icon").removeClass("active");
       });
