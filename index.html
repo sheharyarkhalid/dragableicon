@@ -553,11 +553,11 @@
         $(".draging_icon").draggable({ containment: "parent" });
       });
 
-      $(".draging_icon").dblclick(function () {
+      $(".draging_icon").click(function () {
         $(".cart_navigation").addClass("active");
         $(".draging_icon").addClass("active");
       });
-      $(".close_cart_navigation_btn").dblclick(function () {
+      $(".close_cart_navigation_btn").click(function () {
         $(".cart_navigation").removeClass("active");
         $(".draging_icon").removeClass("active");
       });
