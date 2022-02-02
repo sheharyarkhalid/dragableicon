@@ -82,14 +82,12 @@
         z-index: 999;
         top: 0px;
         overflow: auto;
-      }
-      .cart_navigation_main {
         display: flex;
         flex-direction: column;
         padding: 30px 24px 0px 24px;
         justify-content: space-between;
-        height: 100%;
       }
+
       .cart_navigation_content {
         display: grid;
         grid-template-columns: auto;
@@ -359,49 +357,47 @@
     </style>
 
     <div class="cart_navigation">
-      <div class="cart_navigation_main">
-        <div class="cart_navigation_content">
-          <div class="cart_navigation_header">
-            <div class="cart_navigation_heading">
-              <h3>Your Cart</h3>
-              <span>03</span>
-            </div>
-            <div class="cart_navigation_close_btn">
-              <i class="close_cart_navigation_btn fas fa-times"></i>
-            </div>
+      <div class="cart_navigation_content">
+        <div class="cart_navigation_header">
+          <div class="cart_navigation_heading">
+            <h3>Your Cart</h3>
+            <span>03</span>
           </div>
-          <div class="cart_navigation_item_list">
-            <div class="cart_navigation_single_item">
-              <figure><img src="images/signup_logo.png" /></figure>
-              <div class="cart_navigation_single_item_detail">
-                <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
-                <strong>CAD 50.99</strong>
-                <div class="cart_navigation_qty_main">
-                  <div class="cart_navigation_qty_plus_minu_btns">
-                    <div class="counter_minus_btn">
-                      <a><i class="fa fa-minus"></i></a>
-                    </div>
-                    <span class="total_count_quantity">1</span>
-                    <div class="counter_plus_btn">
-                      <a><i class="fa fa-plus"></i></a>
-                    </div>
+          <div class="cart_navigation_close_btn">
+            <i class="close_cart_navigation_btn fas fa-times"></i>
+          </div>
+        </div>
+        <div class="cart_navigation_item_list">
+          <div class="cart_navigation_single_item">
+            <figure><img src="images/signup_logo.png" /></figure>
+            <div class="cart_navigation_single_item_detail">
+              <p><span>1x</span> Allergo sunflower cooking oil 3 liters</p>
+              <strong>CAD 50.99</strong>
+              <div class="cart_navigation_qty_main">
+                <div class="cart_navigation_qty_plus_minu_btns">
+                  <div class="counter_minus_btn">
+                    <a><i class="fa fa-minus"></i></a>
                   </div>
-                  <div class="cart_navigation_del_btns">
-                    <a><i class="far fa-trash-alt"></i></a>
+                  <span class="total_count_quantity">1</span>
+                  <div class="counter_plus_btn">
+                    <a><i class="fa fa-plus"></i></a>
                   </div>
+                </div>
+                <div class="cart_navigation_del_btns">
+                  <a><i class="far fa-trash-alt"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="cart_navigation_proceeding_btn">
-          <div class="subtotal_price_calculation">
-            <span>Subtotal</span><span>CAD 129.99</span>
-          </div>
-          <div class="cart_navigation_checkout_btn"><a>Checkout</a></div>
-          <div class="cart_navigation_view_cart_btn"><a>View Cart</a></div>
+      <div class="cart_navigation_proceeding_btn">
+        <div class="subtotal_price_calculation">
+          <span>Subtotal</span><span>CAD 129.99</span>
         </div>
+        <div class="cart_navigation_checkout_btn"><a>Checkout</a></div>
+        <div class="cart_navigation_view_cart_btn"><a>View Cart</a></div>
       </div>
     </div>
 
